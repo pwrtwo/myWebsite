@@ -75,6 +75,7 @@
               <h5 class="text-uppercase">Programming Languages</h5>
               <p>Java<br>
               Javascript<br>
+              C/C++<br>
               PHP<br>
               C#</p>
           </div>
@@ -103,19 +104,19 @@
           <form action="http://formspree.io/philipshin00@gmail.com" method="post">
               <!--full name area-->
               <div class="form-group">
-                  <input type="name" class="form-control" id="fullName" placeholder="Full Name" required="">
+                  <input type="text" name="name" class="form-control" id="fullName" placeholder="Full Name" required="">
               </div>
               <!--email address area-->
               <div class="form-group">
-                  <input type="eAddress" class="form-control" id="emailAddress" placeholder="Email Address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" required="">
+                  <input type="email" name="email" class="form-control" id="emailAddress" placeholder="Email Address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" required="">
               </div>             
               <!--subject area-->
               <div class="form-group">
-                  <input type="subject" class="form-control" id="subject" placeholder="Subject" required="">
+                  <input type="text" name="subject" class="form-control" id="subject" placeholder="Subject" required="">
               </div>
               <!--message area-->
               <div class="form-group">
-                  <textarea type="message" class="form-control" id="message" placeholder="Type your message here..." required=""></textarea>
+                  <textarea name="message" class="form-control" id="message" placeholder="Type your message here..." required=""></textarea>
               </div>
               <button type="submit" class="btn btn-primary">Send Message</button>
           </form>
