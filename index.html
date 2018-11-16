@@ -4,12 +4,13 @@
   <meta charset="UTF-8">
   <title>Philip's Homepage</title>
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,500,600" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-  <!--top navbar--> <!--****add social net****-->
+  <!--top navbar-->
   <div id="home"></div>
   <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
     <a class="navbar-brand" href="#home">Home</a>
@@ -21,6 +22,21 @@
               <a class="nav-link" href="#contact">Contact</a>
           </li>
       </ul>
+      <!--top social network-->
+      <div class="mr-auto"></div>
+      <div class="p-2">
+          <a href="https://www.linkedin.com/in/philip-shin-608297127/">
+              <i class="fab fa-linkedin fa-2x"></i>
+          </a>
+      </div>
+      <div class="p-2">
+          <a href="https://github.com/pwrtwo/">
+              <i class="fab fa-github fa-2x"></i>
+          </a>
+      </div>
+      <!--top social network END-->
+      
+      
   </nav>
   <!--top navbar END-->
   
@@ -101,7 +117,7 @@
   
   <section id="contact">
       <div class="container">
-          <form action="http://formspree.io/philipshin00@gmail.com" method="post">
+          <form action="http://formspree.io/philipshin00@gmail" method="post">
               <!--full name area-->
               <div class="form-group">
                   <input type="text" name="name" class="form-control" id="fullName" placeholder="Full Name" required="">
@@ -120,42 +136,41 @@
               </div>
               <button type="submit" class="btn btn-primary">Send Message</button>
           </form>
-          
       </div>
   </section>
   <!--contact form END-->
   
-  <!--resume-->
-  <section class="cta-area">
-      <div class="container">
-          <div class="row justify-content-center">
-              <div class="col-lg-8 d-flex no-flex-xs justify-content-between align-items-center">
-                  <h5 class="text-uppercase text-black">Wanna see my résumé?</h5>
-                  <a href="https://docs.google.com/document/d/138-5wvQqnDl16JEz5nCOWBoKWiY66Wfg1doXnwv1OiY/edit?usp=sharing" class="primary-btn d-inline-flex text-uppercase text-black align-items-center">résumé
-                      <span class="lnr lnr-arrow-right"></span>
-                  </a>
-              </div>
-          </div>
-      </div>
-  </section>
+  <!--resume-->  
+  <div class="resume" style="text-align:center;">
+      <a href="https://docs.google.com/document/d/138-5wvQqnDl16JEz5nCOWBoKWiY66Wfg1doXnwv1OiY/edit?usp=sharing" class="btn btn-outline-primary btn-lg text-uppercase text-black">résumé
+      </a>
+  </div>
   <!--resume END-->
-  
+  <br>
   <!--footer-->
-  <footer class="section-half">
-      <div class="container">
-          <div class="footer-bottom d-flex justify-content-between align-items-center">
-              <p class="footer-text m-0">
-                  © 2018 |
-                  <a href="mailto:philipshin00@gmail.com?Subject=Hello%20Again!!">
-                      Philip Shin
-                  </a>
-              </p>
-              <a href="mailto:philipshin00@gmail.com?Subject=Hello%20Again!!"></a>
-              <!--social network bottom-->
-              <!--social network bottom END-->
+  <div class="container">
+      <div class="d-flex flex-row">
+          <p class="mr-auto p-2">
+              © 2018 |
+              <a href="mailto:philipshin00@gmail.com?Subject=Hello%20Again!!">
+                  Philip Shin
+              </a>
+          </p>
+          <!--social network bottom-->
+          <div class="p-2">
+          <a href="https://www.linkedin.com/in/philip-shin-608297127/">
+              <i class="fab fa-linkedin fa-2x"></i>
+          </a>
           </div>
+          <div class="p-2">
+          <a href="https://github.com/pwrtwo/">
+              <i class="fab fa-github fa-2x"></i>
+          </a>
+          </div>
+          <!--social network bottom END-->
       </div>
-  </footer>
+  </div>
+  
   <!--footer END-->  
 
 </body>
