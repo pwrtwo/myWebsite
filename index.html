@@ -117,14 +117,14 @@
   
   <section id="contact">
       <div class="container">
-          <form action="http://formspree.io/philipshin00@gmail" method="post">
+          <form id="contactform" method="post">
               <!--full name area-->
               <div class="form-group">
                   <input type="text" name="name" class="form-control" id="fullName" placeholder="Full Name" required="">
               </div>
               <!--email address area-->
               <div class="form-group">
-                  <input type="email" name="email" class="form-control" id="emailAddress" placeholder="Email Address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" required="">
+                  <input type="email" name="_replyto" class="form-control" id="emailAddress" placeholder="Email Address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" required="">
               </div>             
               <!--subject area-->
               <div class="form-group">
@@ -134,8 +134,15 @@
               <div class="form-group">
                   <textarea name="message" class="form-control" id="message" placeholder="Type your message here..." required=""></textarea>
               </div>
+            	<div class="form-group">
+					        <input type="text" name="_gotcha" style="display:none" />
+			        </div>
               <button type="submit" class="btn btn-primary">Send Message</button>
           </form>
+        	<script>
+		          var contactform =  document.getElementById('contactform');
+		          contactform.setAttribute('action', '//formspree.io/' + 'philipdhshin' + '@' + 'gmail' + '.' + 'com');
+	        </script>
       </div>
   </section>
   <!--contact form END-->
@@ -151,8 +158,8 @@
   <div class="container">
       <div class="d-flex flex-row">
           <p class="mr-auto p-2">
-              © 2018 |
-              <a href="mailto:philipshin00@gmail.com?Subject=Hello%20Again!!">
+              © 2019 |
+              <a href="mailto:philipdhshin@gmail.com?Subject=Hello%20Again!!">
                   Philip Shin
               </a>
           </p>
